@@ -8,6 +8,7 @@
     7. dir - get list of methods supported for the variable
     8. help - get details on how that list of methods can be utilized
     9. type - shows the type of variable
+    
 """
 
 greeting = 'Hello'
