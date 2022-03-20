@@ -1,0 +1,26 @@
+1. Install Environment                                      - pip install pipenv
+2. To install a random module                               - pipenv install requests 
+3. To activate the environment                              - pipenv shell
+4. Type 'exit' to come out of pipenv                        - exit
+5. To run a python script from outside                      - pipenv run python test.py
+6. To change python version                                 - pipenv --python 3.6
+7. To remove virtual env                                    - pipenv --rm
+8. To re-create env as mentioned in pipfile                 - pipenv install
+9. To look at local path of environment installation        - pipenv --venv
+10. To check if install packages has known vulnerabilities  - pipenv check
+11. To install from requirements.txt file                   - pip install -r requirements.txt
+12. To see the list of dependencies as a graph              - pipenv graph
+13. To update pipfile lock                                  - pipenv lock
+14. To put locked version of pip in production              - pipenv install --ignore-pipfile
+15. To install package only in Dev Environment              - pipenv install pytest --dev
+16. To uninstall some package in environment                - pipenv uninstall <package-name>
+
+
+
+Additional Hints:
+-----------------
+Python loads all environment variables present in .env file at the start.
+
+You can test it by:
+import os
+os.environ['SECRET_KEY']

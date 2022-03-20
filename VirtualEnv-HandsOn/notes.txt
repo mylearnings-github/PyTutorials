@@ -1,0 +1,25 @@
+1. Create Virtual Environment               - python -m venv project_env
+2. Activate Virtual Environment             - project_env\Scripts\activate
+3. To see what's installed                  - pip list
+4. To install any new module                - pip install <module-name>
+5. To create requirement.txt                - pip freeze
+6. To deactivate the Environment            - deactivate
+7. To delete the Environment                - rmdir project_env /s
+
+
+Steps below is to re-create VM with some naming conventions:
+8. Creating a folder                        - mkdir my_project
+9. Recreate Virtual Environment             - python -m venv my_project\venv
+10. Activating Virtual Environment          - my_project\venv\Scripts\activate.bat
+11. Install packages from requirements file - pip install -r requirements.txt
+12. To verify if everything is installed    - pip list
+
+Steps to access system packages inside our virtual environment (Not advisible):
+13. Remove and create venv with new setting - python -m venv venv --system-site-packages
+14. Install something which isn't global    - pip install SQLAlchemy
+15. To only list local packages             - pip list --local
+16. To list out the pip freeze              - pip freeze --local
+
+Free Advice:
+------------
+DO NOT COMMIT venv and config files to source control
